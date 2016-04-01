@@ -1,0 +1,15 @@
+# VIM files
+*.swp
+*.swo
+
+# Build files
+result
+
+# LaTeX files
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.pdf
+*.ps
