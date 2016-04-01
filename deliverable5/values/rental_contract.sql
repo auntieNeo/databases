@@ -14,3 +14,7 @@ insert into rental_contract (pickup_date, scheduled_return_date, actual_return_d
 	values ('2016-03-07', '2016-03-09', NULL, 0, 5);
 insert into rental_contract (pickup_date, scheduled_return_date, actual_return_date, retained_deposit, customer_num)
 	values ('2016-04-12', '2016-04-15', NULL, 0, 2);
+insert into rental_contract (pickup_date, scheduled_return_date, actual_return_date, retained_deposit, customer_num)
+	values ('2015-10-09', '2015-10-10', NULL, 0, 1);
+insert into rental_contract (pickup_date, scheduled_return_date, actual_return_date, retained_deposit, customer_num)
+	values ('2015-10-09', '2015-10-09', '2015-10-11', 0, 3);
