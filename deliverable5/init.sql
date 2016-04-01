@@ -60,7 +60,7 @@ CREATE TABLE rental_item (
     rental_item_charge DECIMAL(6,2),
     rental_item_deposit_amount DECIMAL(6,2),
     PRIMARY KEY ( contract_num, equipment_id ),
-    FOREIGN KEY ( contract_num ) REFERENCES customer ( customer_num ),
+    FOREIGN KEY ( contract_num ) REFERENCES rental_contract ( contract_num ),
     FOREIGN KEY ( equipment_id ) REFERENCES equipment ( equipment_id )
 );
 CREATE TABLE reservation_item (
