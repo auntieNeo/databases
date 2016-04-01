@@ -11,6 +11,20 @@ $dbh->{PrintError} = 0;
 $dbh->{RaiseError} = 1;  # errors cannot be silently ignored
 $dbh->{AutoCommit} = 0;  # use transactions
 
+sub add_customer {
+  my ($args) = @_;
+  my $statement = 'INSERT INTO customer (fname, lname, email, phone, address) VALUES (?, ?, ?, ?, ?)';
+  my $sth = $dbh->prepare($statement);
+  $sth->execute(
+    $args->{fname},
+    $args->{lname},
+    $args->{email},
+    $args->{phone},
+    $args->{address}
+  );
+  $args->{dbh}->commit;
+}
+
 sub add_vendor {
   my ($args) = @_;
   my $statement = 'INSERT INTO vendor (name, city, phone) VALUES (?, ?, ?)';
@@ -20,8 +34,17 @@ sub add_vendor {
 }
 
 add_vendor({
-  name => "Umbrella Corp.",
-  city => "Raccoon City",
-  phone => "555-2953",
+  name => 'Umbrella Corp.',
+  city => 'Raccoon City',
+  phone => '555-2953',
   dbh => $dbh,
+});
+
+add_customer({
+  fname => 'John',
+  lname => 'Doe',
+  email => 'johndoe@example.com',
+  phone => '555-1973',
+  address => "8463 12th Street East\nDearborn, MI 48124",
+  dbh => $dbh
 });
