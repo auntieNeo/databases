@@ -13,3 +13,5 @@ result
 *.log
 *.pdf
 *.ps
+*.toc
+*.synctex.gz
