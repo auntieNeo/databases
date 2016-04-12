@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[makeroom]{cancel}
+\usepackage{graphicx}
+\usepackage{color, colortbl}
+\definecolor{LightRed}{rgb}{1.0,0.78,0.78}
+\usepackage{listings}
+\usepackage[final]{pdfpages}
+\begin{document}
+\lstset{breaklines=true,xleftmargin=-50pt}
+
+\title{Deliverable 5---Stored Procedures}
+\date{\today}
+\author{Galen Cochrane, Jonathan Glines, Nicholas Harrison }
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Initialization}
+\subsection{Database Initialization}
+\lstinputlisting[language=SQL,title=./init.sql]{./init.sql}
+
+\subsection{Database Sample Data}
+\lstinputlisting[language=SQL,title=values/accessory.sql]{values/accessory.sql}
+\lstinputlisting[language=SQL,title=values/customer.sql]{values/customer.sql}
+\lstinputlisting[language=SQL,title=values/equipment.sql]{values/equipment.sql}
+\lstinputlisting[language=SQL,title=values/equipment\_type.sql]{values/equipment_type.sql}
+\lstinputlisting[language=SQL,title=values/equipped\_with.sql]{values/equipped_with.sql}
+\lstinputlisting[language=SQL,title=values/line\_item\_accessory.sql]{values/line_item_accessory.sql}
+\lstinputlisting[language=SQL,title=values/line\_item\_equipment.sql]{values/line_item_equipment.sql}
+\lstinputlisting[language=SQL,title=values/order.sql]{values/order.sql}
+\lstinputlisting[language=SQL,title=values/rental\_contract.sql]{values/rental_contract.sql}
+\lstinputlisting[language=SQL,title=values/rental\_history.sql]{values/rental_history.sql}
+\lstinputlisting[language=SQL,title=values/rental\_item.sql]{values/rental_item.sql}
+\lstinputlisting[language=SQL,title=values/reservation.sql]{values/reservation.sql}
+\lstinputlisting[language=SQL,title=values/reservation\_item.sql]{values/reservation_item.sql}
+\lstinputlisting[language=SQL,title=values/supplier.sql]{values/supplier.sql}
+
+\section{Procedures}
+\subsection{Stored Procedure Code}
+\lstinputlisting[language=SQL,title=procedures/procedure01.sql]{procedures/procedure01.sql}
+\lstinputlisting[language=SQL,title=procedures/procedure02.sql]{procedures/procedure02.sql}
+\lstinputlisting[language=SQL,title=procedures/procedure03.sql]{procedures/procedure03.sql}
+
+\subsection{Procedure Tests}
+\lstinputlisting[language=SQL,title=tests/procedure01.sql]{tests/procedure01.sql}
+\lstinputlisting[language=SQL,title=tests/procedure02.sql]{tests/procedure02.sql}
+\lstinputlisting[language=SQL,title=tests/procedure03.sql]{tests/procedure03.sql}
+
+\subsection{Output (All Procedures)}
+\includegraphics[scale=0.60]{./screenshots/deliverable5output.png}
+
+\end{document}
+
