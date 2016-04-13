@@ -36,6 +36,7 @@ CREATE TABLE rental_contract (
     actual_return_date DATE,
     retained_deposit DECIMAL(6,2),
     customer_num BIGINT UNSIGNED,
+    card_number_used VARCHAR(16) DEFAULT NULL,
     FOREIGN KEY ( customer_num ) REFERENCES customer ( customer_num )
 );
 CREATE TABLE equipment_type (
