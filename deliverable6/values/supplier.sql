@@ -1,0 +1,6 @@
+USE twk;
+INSERT INTO supplier (`supplier_num`,`s_name`,`s_addr`,`s_city`,`s_state`,`s_zip`,`s_phone`,`s_fax`,`s_contact`,`s_email`) VALUES (1,'congue mi','73744 South United Arab Emirates Ln.','Galesburg','AK','15068','921-299-9693','009-236-2717','Phelan Peterson','Luke@ultrices.gov');
+INSERT INTO supplier (`supplier_num`,`s_name`,`s_addr`,`s_city`,`s_state`,`s_zip`,`s_phone`,`s_fax`,`s_contact`,`s_email`) VALUES (2,'placerat semper','5327 North Bessemer Ave.','Racine','OK','83396','779-956-7971','562-655-3048','Ivy Walton','Uta@nisi.gov');
+INSERT INTO supplier (`supplier_num`,`s_name`,`s_addr`,`s_city`,`s_state`,`s_zip`,`s_phone`,`s_fax`,`s_contact`,`s_email`) VALUES (3,'semper eleifend','60133 West Bahamas Ave.','Waterbury','HI','81890','947-521-2569','824-063-4907','Noelani Velasquez','Bruno@sem.com');
+INSERT INTO supplier (`supplier_num`,`s_name`,`s_addr`,`s_city`,`s_state`,`s_zip`,`s_phone`,`s_fax`,`s_contact`,`s_email`) VALUES (4,'Nullam ridiculus','2106 North Namibia St.','Bridgeport','RI','55239','109-590-8558','217-896-7543','Anika Garcia','Iola@Integer.net');
+INSERT INTO supplier (`supplier_num`,`s_name`,`s_addr`,`s_city`,`s_state`,`s_zip`,`s_phone`,`s_fax`,`s_contact`,`s_email`) VALUES (5,'justo non','37696 South Armenia Ln.','Roseville','MN','92009','315-264-2967','740-696-6881','Kenyon Paul','Adena@natoque.com');
